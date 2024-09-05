@@ -1,0 +1,172 @@
+    /* Estilo Geral */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #252525;
+        height: 100vh;
+        text-align: center;     
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        100% {
+            background-position: 100% 50%;
+        }
+    }
+
+    .interface {
+        max-width: 1480px;
+        margin: 0 auto;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .contato button {
+        padding: 10px 40px;
+        font-size: 18px;
+        font-weight: 300;
+        background-color: #006eff;
+        border: 0;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: .2s;
+    } 
+
+    /* Estilo do Cabeçalho */
+    header {
+        padding: 40px 4%;
+    }
+
+    header > .interface {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header a {
+        color: #888888;
+        text-decoration: none;
+        display: inline-block;
+        transition: .2s;
+    }
+
+    header a:hover {
+        color: #FFF;
+        transform: scale(1.05);
+    }
+
+    header nav ul {
+        list-style-type: none;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        padding: 0 40px;
+    }
+
+    .contato button:hover {
+        box-shadow: 0px 0px 8px #006eff;
+        transform: scale(1.05);
+    }
+
+    /* Estilo do Topo do Site */
+    section.topo-do-site {
+        padding: 40px 4%;
+    }
+
+    section.topo-do-site .flex {
+        align-items: center;
+        justify-content: center;
+        gap: 90px;
+    }
+
+    .topo-do-site h1 {
+        color: #FFF;
+        font-size: 42px;
+        line-height: 40px;
+    }
+
+    .topo-do-site .txt-topo-site h1 span {
+        color: #006eff;
+    }
+
+    .topo-do-site .txt-topo-site p {
+        color: #FFF;
+        margin: 40px 0;
+    }
+
+    .topo-do-site .img-topo-site {
+        position: relative;
+        animation: flutuar 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes flutuar {
+        0% {
+            top: 0;
+        }
+        100% {
+            top: 30px;
+        }
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 80%;
+        height: auto;
+    }
+
+    .logo img {
+        width: 50%;
+        height: auto;
+    }
+
+    /* Estilo da Seção de Login */
+    section.login {
+        width: 300px;
+        border-style: solid;
+        border-width: 1px;
+        text-align: center;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #333;
+        border-radius: 8px;
+    }
+
+    section.login h3 {
+        color: #FFF;
+        margin-bottom: 15px;
+    }
+
+    section.login input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #666;
+        background-color: #444;
+        color: #FFF;
+    }
+
+    section.login button {
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #FFF;
+        background-color: #006eff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .2s;
+    }
+
+    section.login button:hover {
+        background-color: #0052cc;
+    }

@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #252525;
+    height: 100vh;
+  }
+  
+  .interface {
+    max-width: 1480px;
+    margin: 40px 250px;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  /* Estilo do Topo do Site */
+  section.topo-do-site {
+    padding: 40px 4%;
+  }
+  
+  .topo-do-site .flex {
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+  }
+  
+  .topo-do-site h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+  }
+  
+  .topo-do-site .txt-topo-site {
+    flex: 1;
+    color: #fff;
+    margin-right: 90px;
+  }
+  
+  .topo-do-site .txt-topo-site h1 span {
+    color: #006eff;
+  }
+  
+  .topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+  }
+  
+  .topo-do-site .img-topo-site img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    animation: flutuar 2s ease-in-out infinite alternate;
+  }
+  
+  .topo-do-site .img-topo-site {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+  }
+  
+  .topo-do-site .img-topo-site img {
+    width: 180%;
+    height: auto;
+  }
+  
+  /* Estilo dos Botões e Centralização */
+  .contato {
+    text-align: center; /* Centraliza o conteúdo da div */
+    margin: 20px; /* Margem ao redor da div para dar um pouco de espaçamento */
+  }
+  
+  .contato a {
+    text-decoration: none; 
+  }
+  
+  .contato button {
+    background-color: #006eff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+  }
+  
+  .contato button:hover {
+    background-color: #0056cc;
+  }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Página de Cadastro</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="fazer-cadastro.html" target="_blank">Fazer Novo Cadastro</a></li>
+                    <li><a href="ver-cadastro.html" target="_blank">Ver Cadastros</a></li>
+                    <li><a href="entrada-saida.html" target="_blank">Controle de Entrada e Saída</a></li>
+                </ul>
+            </nav>
+        </div><!--interface-->
+    </header>
+
+    <main>
+        <section class="login">
+            <h3>Cadastro</h3>
+            <input type="text" placeholder="Digite seu login" id="novoLogin">
+            <input type="password" placeholder="Digite sua senha" id="novaSenha">
+            <input type="password" placeholder="Repita sua senha" id="repSenha">
+            <button onclick="cadastra()">Cadastrar</button>
+        </section>
+    </main>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>
